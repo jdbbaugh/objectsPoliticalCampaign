@@ -62,12 +62,34 @@ function missionChange(missionary) {
     sangerApp.registerToVoteURL = goVote;
   }
   
-//change give platforms
 
-function changeStatement(newState) {
+  //CHANGES ENDS OF STATEMENT PLATFORMS
+//change tax statement platforms
+function changeTaxStatement(newState) {
     sangerApp.platformStatements.taxes = newState;
 }
 
-changeStatement('tax alot')
+function changeJobStatement(newState) {
+    sangerApp.platformStatements.jobs = newState;
+}
 
-console.log(sangerApp.platformStatements.taxes)
+function changeInfraStatement(newState) {
+    sangerApp.platformStatements.infrastructure = newState;
+}
+
+function changeHealthStatement(newState) {
+    sangerApp.platformStatements.healthCare = newState;
+}
+
+function changeCrimeStatement(newState) {
+    sangerApp.platformStatements.crimeEnforcement = newState;
+}
+
+function changePlatformStatement(category, statement) {
+    if (Object.getOwnPropertyNames(sangerApp.platformStatements) === category) {
+        Object.getOwnPropertyNames(sangerApp.platformStatements).category = statement;
+    } else {
+        console.log('try again');
+    }
+}
+
