@@ -31,3 +31,29 @@ const sangerApp = {
     registerToVoteURL: 'https://www.usa.gov/register-to-vote'
 
 }
+
+//This will allow user to change Congressional District
+function changeDistrict(newDis) {
+    sangerApp.congressionalDistrict = newDis;
+  }
+
+  //This will allow user to change donation link
+  function donationURL(newDonate) {
+    sangerApp.donateHere = newDonate;
+  }
+
+   //This will allow user to change biography
+   function bioRecall(newBio) {
+    sangerApp.biography = newBio;
+  }
+
+  //This will allow user to change mission statement
+function missionChange(missionary) {
+    sangerApp.missionStatement = missionary;
+  }
+
+ //This will allow user to change register to vote URL
+ function newVoteLink(goVote) {
+    sangerApp.registerToVoteURL = goVote;
+  }
+  
