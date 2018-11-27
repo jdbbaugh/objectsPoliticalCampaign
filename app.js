@@ -85,13 +85,14 @@ function changeCrimeStatement(newState) {
     sangerApp.platformStatements.crimeEnforcement = newState;
 }
 
-// function changePlatformStatement(category) {
-//     if (Object.getOwnPropertyNames(sangerApp.platformStatements) === category) {
-//         console.log('yeah');
-//     } else {
-//         console.log('try again');
-//     }
-// }
+//this allows you to add a platform statement
+function changePlat (key1, something) {
+sangerApp.platformStatements[key1]=something
+}
+
+changePlat('this', 'that')
+
+console.log(sangerApp.platformStatements);
 
 
 
