@@ -85,11 +85,14 @@ function changeCrimeStatement(newState) {
     sangerApp.platformStatements.crimeEnforcement = newState;
 }
 
-function changePlatformStatement(category, statement) {
-    if (Object.getOwnPropertyNames(sangerApp.platformStatements) === category) {
-        Object.getOwnPropertyNames(sangerApp.platformStatements).category = statement;
-    } else {
-        console.log('try again');
-    }
-}
+// function changePlatformStatement(category) {
+//     if (Object.getOwnPropertyNames(sangerApp.platformStatements) === category) {
+//         console.log('yeah');
+//     } else {
+//         console.log('try again');
+//     }
+// }
+
+
+
 
