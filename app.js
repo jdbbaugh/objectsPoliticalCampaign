@@ -90,9 +90,15 @@ function changePlat (key1, something) {
 sangerApp.platformStatements[key1]=something
 }
 
-changePlat('this', 'that')
+//this allows you to add photos to the image gallery
+function changePhoto (key1, radPhoto) {
+    sangerApp.imgGallery[key1]=radPhoto
+    }
 
-console.log(sangerApp.platformStatements);
+changePlat('more', 'shizam');
+changePhoto('highSchoolPhoto', "url.etcandstuff");
+
+console.log(sangerApp.imgGallery);
 
 
 
